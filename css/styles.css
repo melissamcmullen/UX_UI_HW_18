@@ -1,0 +1,129 @@
+/* universal font for the page */
+* { 
+    font-family: 'Poppins', regular;
+}
+/* top navigation bar in blue */
+  .topnav {
+    overflow: hidden;
+    background-color: #1C6E8C;
+  }
+  .topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 16px;
+  }
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+
+  /* hero image on top */
+.heroimage {
+  position: relative;
+  background-image: url("images/thunderstorm2_1200.jpg");
+}
+/* Top left main logo */
+.topleftlogo{
+  position: absolute;
+  margin-left: 20px;
+  margin-top: 20px;
+  top: 8px;
+  left: 16px;
+}
+/* Top left National Weather Service name */
+.topleftname {
+  position: absolute;
+  margin-left: 140px;
+  margin-top: 50px;
+  color: white;
+  top: 8px;
+  left: 16px;
+  font-size: xx-large;
+  font-weight: bolder;
+}
+/* Top right text search bar */
+.topright {
+  position: absolute;
+  margin-top: 65px;
+  top: 8px;
+  right: 16px;
+}
+.small {
+  line-height: 0.0;
+}
+
+/* yellow alert box on the left */
+.yellowalert {
+  background-color: yellow;
+  position: absolute;
+  text-align: left;
+  float: left;
+  margin: 40px 20px;
+  padding: 20px;
+  width: 60%;
+}
+
+/* personalize weather box on the right */
+.personalize {
+  background-color: lightblue;
+  position: relative;
+  text-align: left;
+  float: right;
+  margin: 40px 20px;
+  padding: 20px;
+  width: 30%;
+}
+
+/* map heading */
+.mapheading {
+  background-color: #1C6E8C;
+  position: relative;
+  text-align: left;
+  padding-left: 20px;
+  color: white;
+  float: left;
+  width: 100%;
+}
+
+  /* bottom navigation bar in green */
+  .bottomnav {
+    overflow: hidden;
+    align-items: baseline;
+    background-color: #3F9686;
+  }
+  .bottomnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 16px;
+  }
+  .bottomnav a:hover {
+    background-color: #ddd;
+    color: black; 
+  }
+
+  /* bottom footer */
+  .footerleft {
+    position: absolute;
+    text-align: left;
+    float: left;
+    background-color: #1C6E8C;
+    color: #f2f2f2;
+    padding: 20px;
+    width: 50%;
+  }
+
+  .footerright {
+    text-align: right;
+    float: right;
+    background-color: #1C6E8C;
+    color: #f2f2f2;
+    padding: 20px;
+    width: 50%;
+  }
+  
