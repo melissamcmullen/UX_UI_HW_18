@@ -64,7 +64,6 @@
   top: 20px;
 }
 
-
 /* flexbox for alert and personalize side-by-side*/
 .flex-thingy {
   display: flex;
@@ -85,7 +84,6 @@
   text-align: left;
   padding: 40px 40px 10px 40px;
 }
-
 
 /* map heading */
 .mapheading {
@@ -148,33 +146,32 @@
 
   /* grid of cards at the bottom */
   #categoryGrid {
-    margin: 0px 5%;
+    margin: 50px 0px;
     display: grid;
-    grid-template-rows: 300px 300px 300px;
+    grid-template-rows: 300px 300px;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-areas:
-    "bookcases bedroom patio"
-    "couches couches patio"
-    "desks desks desks"
+    "Tornado Thunderstorm News"
+    "Beach Beach News"
     ;
   }
-  #bookcases {
-    grid-area: bookcases;
-    background-image: url("../images/bookcases@2x.png");
+  #Tornado {
+    grid-area: Tornado;
+    background-image: url("../images/Tornado safety.png");
   }
-  #bedroom {
-    grid-area: bedroom;
-    background-image: url("../images/beds@2x.png");
+  #Thunderstorm {
+    grid-area: Thunderstorm;
+    background-image: url("../images/Thunderstorn info.png");
   }
-  #couches {
-    grid-area: couches;
-    background-image: url("../images/couch@2x.png");
+  #Beach {
+    grid-area: Beach;
+    background-image: url("../images/Beach hazards.png");
   }
-  #patio {
-    grid-area: patio;
-    background-image: url("../images/patio@2x.png");
+  #News {
+    grid-area: News;
+    background-image: url("../images/NWS news.png");
+    
   }
-  
   .categoryGridArea {
     background-position: center;
     background-size: cover;
@@ -185,3 +182,25 @@
     align-content: end;
   }
   
+  .heading {
+    background-color: #1C6E8C;
+    padding: 15px;
+    color: white;
+    font-size: 18px;
+  }
+
+
+
+  /* On screens that are 600px wide or less, make the menu links stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) and (min-width: 450px) {
+  .topnav a {
+    float: none;
+    width: 100%;
+    display:hover;
+    font-size: 12px;
+  }
+  .topleftlogo {
+    position: absolute;
+    
+  }
+}
