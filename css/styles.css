@@ -5,13 +5,14 @@
 /* top navigation bar in blue */
   .topnav {
     overflow: hidden;
+    align-items: baseline;
     background-color: #1C6E8C;
   }
   .topnav a {
     float: left;
     color: #f2f2f2;
     text-align: center;
-    padding: 14px 16px;
+    padding: 14px 30px;
     text-decoration: none;
     font-size: 16px;
   }
@@ -23,7 +24,9 @@
   /* hero image on top */
 .heroimage {
   position: relative;
-  background-image: url("images/thunderstorm2_1200.jpg");
+  background-image: url("images/thunderstorm2_1000.jpg");
+  width: "100%";
+  background-color: #1C6E8C;
 }
 
 /* Top left main logo */
@@ -64,7 +67,7 @@
   top: 20px;
 }
 
-/* flexbox for alert and personalize side-by-side*/
+/* Flexbox for alert and personalize side-by-side*/
 .flex-thingy {
   display: flex;
   flex-direction: row;
@@ -85,7 +88,7 @@
   padding: 40px 40px 10px 40px;
 }
 
-/* map heading */
+/* Map heading */
 .mapheading {
   background-color: #1C6E8C;
   position: relative;
@@ -96,8 +99,7 @@
   width: 100%;
 }
 
-
-/* flexbox for map key side-by-side with map*/
+/* Flexbox for map key side-by-side with map*/
 .flex-container {
   display: flex;
   flex-direction: row;
@@ -115,7 +117,7 @@
     float: left;
     color: #f2f2f2;
     text-align: center;
-    padding: 14px 16px;
+    padding: 14px 30px;
     text-decoration: none;
     font-size: 16px;
   }
@@ -144,7 +146,7 @@
   }
   
 
-  /* grid of cards at the bottom */
+  /* Grid of cards at the bottom */
   #categoryGrid {
     margin: 50px 0px;
     display: grid;
@@ -191,16 +193,42 @@
 
 
 
-  /* On screens that are 600px wide or less, make the menu links stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) and (min-width: 450px) {
-  .topnav a {
-    float: none;
-    width: 100%;
-    display:hover;
-    font-size: 12px;
+  /* On screens that are 950px wide or less, adjust position of the top search bar
+  and reduce padding on the first flex box */
+  @media only screen and (max-width: 950px) {
+    .topright {
+      margin: 20px 0px 0px 30px;
+    }
+    .yellowalert {
+      margin: 40px 20px;
+      padding: 10px 20px 10px 20px;
+    }
+    .personalize {
+      padding: 20px 10px 10px 10px;
+    }
   }
-  .topleftlogo {
-    position: absolute;
-    
+
+  /* On screens that are 600px wide or less, adjust position of top search bar, reduce heading,
+  and shift grid to one column */
+  @media only screen and (max-width: 600px) {
+    .topright {
+      position: static;
+      margin: 20px 0px 0px 30px;
+    }
+    .topleftname {
+      margin-top: 40px;
+      font-size: x-large;
+    }
+    #categoryGrid {
+      margin: 50px 0px;
+      display: grid;
+      grid-template-rows: 300px 300px 300px 300px;
+      grid-template-columns: 1fr;
+      grid-template-areas:
+      "Tornado" 
+      "Thunderstorm"
+      "Beach"
+      "News"
+      ;
+    }
   }
-}
